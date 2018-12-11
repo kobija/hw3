@@ -1,0 +1,6 @@
+1. How long did you spend to do this assignment? about 10 hours
+2. The name of the directory where your files are, /hw3
+3. What problems (if any) did you encounter in this assignment, and if
+yes, how did you solve the problems? I've done this before, hardest part was trying to read my old code
+4. Comment on how useful this assignment was as a way to learn about
+authentication on web-based systems. It was fun
