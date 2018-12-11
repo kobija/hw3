@@ -20,9 +20,32 @@ function displayTable(){
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         // output data of each row
-        echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>Student_id</th></tr>";
+        echo "<table>
+                   <tr>
+                       <th>Annual</th>
+                       <th>Term</th>
+                       <th>Lastname</th>
+                       <th>Name</th>
+                       <th>Major</th>
+                       <th>Level</th>
+                       <th>Degree</th>
+                       <th>Student_id</th>
+                   </tr>";
         while($row = $result->fetch_assoc()) {
-            echo "<tr><td>".$row["﻿Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
+            debug_to_console($row);
+            $date = date('j F, Y', strtotime($row['Annual']));
+            $temp = print_f($row['Annual']);
+
+            echo "<tr>
+                      <td>.$temp.</td>
+                      <td>".$row["Term"]."</td>
+                      <td>".$row["Lastname"]."</td>
+                      <td>".$row["Name"]."</td>
+                      <td>".$row["Major"]."</td>
+                      <td>".$row["Level"]."</td>
+                      <td>".$row["Degree"]."</td>
+                      <td>".$row["Student_id"]."</td>
+                  </tr>";
         }
         echo "</table>";
     }
@@ -224,8 +247,5 @@ function displayTable(){
 
 }
 
-
-
-
-
 ?>﻿
+
