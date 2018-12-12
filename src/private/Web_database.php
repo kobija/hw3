@@ -32,12 +32,8 @@ function displayTable(){
                        <th>Student_id</th>
                    </tr>";
         while($row = $result->fetch_assoc()) {
-            debug_to_console($row);
-            $date = date('j F, Y', strtotime($row['Annual']));
-            $temp = print_f($row['Annual']);
-
             echo "<tr>
-                      <td>.$temp.</td>
+                      <td>".$row['Annual']."</td>
                       <td>".$row["Term"]."</td>
                       <td>".$row["Lastname"]."</td>
                       <td>".$row["Name"]."</td>
