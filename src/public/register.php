@@ -16,13 +16,7 @@ function register() {
     $lastlogin = -1;
     $created = date("Y/m/d");
 
-    debug_to_console($firstname);
     $password_encrypted = password_hash($pw, PASSWORD_DEFAULT);
-
-    $randomCharacters = 'bananas123';
-    $salted = $randomCharacters . $uname . $password_encrypted;
-
-    debug_to_console(password_verify ( $pw , PASSWORD_DEFAULT ));
 
     $isAdmin = 0;
     if ($_POST["admin"] == 'admin') {
@@ -36,7 +30,7 @@ function register() {
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "INSERT INTO person (first_name, last_name, user_name, user_password, user_type, last_login, account_creation) VALUES ('$firstname', '$lastname', '$uname', '$salted', '$isAdmin', '$lastlogin', '$created')";
+    $sql = "INSERT INTO person (first_name, last_name, user_name, user_password, user_type, last_login, account_creation) VALUES ('$firstname', '$lastname', '$uname', '$password_encrypted', '$isAdmin', '$lastlogin', '$created')";
 
     if ($conn->query($sql) === TRUE) {
         $message = "New record created successfully";

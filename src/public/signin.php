@@ -14,9 +14,7 @@ function signIn() {
     $result = $con->query($userStatement);
     if ($result->num_rows === 1) {
         $row = $result->fetch_array(MYSQLI_ASSOC);
-        $randomCharacters = 'bananas123';
-        $salted = $randomCharacters . $user_name;
-        if ($user_password == $row['user_password']) {
+        if (password_verify($user_password, $row['user_password'])){
             debug_to_console("password match");
             echo "Match";
             session_start();
