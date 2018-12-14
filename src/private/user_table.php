@@ -6,6 +6,15 @@
         <h3 class="info-text">Add new user </h3>
         <form class="form-container" action="../public/register.php" method="post">
             <div class="input-addon">
+                <input class="form-element input-field" name="firstname" placeholder="First Name" type="firstname">
+            </div>
+            <div class="input-addon">
+                <input class="form-element input-field" name="lastname" placeholder="Last Name" type="lastname">
+            </div>
+            <div class="input-addon">
+                <input class="form-element input-field" name="username" placeholder="User Name" type="username">
+            </div>
+            <div class="input-addon">
                 <input class="form-element input-field" name="emailaddress" placeholder="Email Address" type="emailaddress">
             </div>
             <div class="input-addon">

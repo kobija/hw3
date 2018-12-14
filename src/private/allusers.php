@@ -66,9 +66,9 @@
         $count++;
         ?>
         <tr>
-            <td>   <?php echo $row["user_name"]; ?></td>
             <td>   <?php echo $row["first_name"]; ?></td>
             <td>   <?php echo $row["last_name"]; ?></td>
+            <td>   <?php echo $row["user_name"]; ?></td>
             <td>   <?php echo $row["user_type"]; ?></td>
             <td>   <?php echo $row["last_login"]; ?></td>
             <td>   <?php echo $row["account_creation"]; ?></td>

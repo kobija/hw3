@@ -16,6 +16,7 @@ function register() {
     $lastlogin = -1;
     $created = date("Y/m/d");
 
+    debug_to_console($firstname);
     $password_encrypted = password_hash($pw, PASSWORD_DEFAULT);
 
     $randomCharacters = 'bananas123';
