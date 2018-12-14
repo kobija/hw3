@@ -9,7 +9,7 @@
     <?php include("../../shared/functions.php") ?>
 </p>
 <body>
-<div class="area">
+<div class="area" style="height: 100%">
     <?php
     $username = "username: " . $_SESSION['username'];
     $firstname = "firstname: " . $_SESSION['firstname'];
