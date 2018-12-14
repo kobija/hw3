@@ -16,7 +16,7 @@ function register() {
     $lastlogin = -1;
     $created = date("Y/m/d");
 
-    $password_encrypted = password_hash($pw, PASSWORD_DEFAULT);
+    $password_encrypted = password_hash($pw, PASSWORD_DEFAULT); // It already does it's own salting
 
     $isAdmin = 0;
     if ($_POST["admin"] == 'admin') {

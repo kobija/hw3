@@ -1,6 +1,71 @@
-1. How long did you spend to do this assignment? about 10 hours
+1. How long did you spend to do this assignment? A lot at least 20 hours
+
 2. The name of the directory where your files are, /hw3
+
 3. What problems (if any) did you encounter in this assignment, and if
 yes, how did you solve the problems? I've done this before, hardest part was trying to read my old code
+Problems integrating the interface, salting the hash since the password_encrypted already does that.
+Fixing the styles of the table.
+
 4. Comment on how useful this assignment was as a way to learn about
-authentication on web-based systems. It was fun
+authentication on web-based systems. It was fun, taught Kevin version control and some brownie points
+
+The instructor will test your web site with the following steps:
+
+1. Check the main page and a few different ways to display the list of
+graduates.
+
+2. Login as admin. Check
+
+3. Create a new regular user. Check
+
+4. Logout admin. Check
+
+5. Login as the new regular user. Check
+
+6. Update the user’s profile. Not Check
+
+7. Look for the list of graduates to see who has a profile available and
+look at their profile. Check
+
+8. Logout that new regular user. Check
+
+9. Login as a different existing regular user. Check
+
+10. Look for the list of graduates to see who has a profile available and
+look at their profile. Check
+
+11. Check that you can do the same on another browser tab. Check
+
+12. Update the profile of this existing regular user. Check
+
+13. Logout. Check
+
+14. Verify that none of the profiles is available. Not Check
+
+
+
+Evaluation will be based on functionality and ease of use. No extra point for
+style and looks.
+Submission
+
+Write and submit a document on how to perform the 14 steps above. It can
+be very short if the steps are obvious. It could have simple text description
+for the less obvious steps. If you think something could be confusing, it could
+contain some screenshots to help the instructor.
+Each partner should write and submit a report that contains the following:
+1. How long did you spend to do this assignment?
+2. The name of the directory where your files are,
+3. How did you work with your partner to do this assignment?
+4. What problems (if any) did you encounter in this assignment, and if
+yes, how did you solve the problems?
+5. Comment on what you learned in this assignment.
+Turn in by sending en e-mail with a .zip attachment containing your files
+and your report. Please use the subject line according to which course you
+are registered for:
+“CS4339 Assignment 4 submission” or “CS5339 Assignment 4 submission”.
+Late submissions
+The penalty for a late submission is 1% per hour for up to 10% for up to 24
+hours late.
+Due date
+Wednesday, December 12, 11:00pm.
