@@ -10,6 +10,7 @@
 </p>
 <body>
 <div class="area">
+
     <?php if (!isAdmin()) {
         echo "<p> you need to be logged in as an administrator to access this page... </p>";
     } else {

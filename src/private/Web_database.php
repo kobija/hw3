@@ -20,7 +20,7 @@ function displayTable(){
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         // output data of each row
-        echo "<div style = 'display: inline-block;'>
+        echo "<div style = 'display: inline-block; overflow: hidden; height: auto;'>
                 <table>
                    <tr>
                        <th>Annual</th>
@@ -44,8 +44,9 @@ function displayTable(){
                       <td>".$row["Student_id"]."</td>
                   </tr>";
         }
-        echo "</table>
-              </div>";
+        echo "</table>	
+       <a href='../private/interface.html'> filter 	
+     </div>";
 
     }
 
