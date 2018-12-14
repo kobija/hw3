@@ -9,8 +9,6 @@ function displayTable(){
     $password = "Sasuke99!";
     $dbname = "kjvaldez_db";
 
-    $tableIsFiltered = false;
-
 // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -20,10 +18,9 @@ function displayTable(){
 
     $sql = "SELECT * FROM kjvaldez_db.studentdata";
     $result = $conn->query($sql);
-    if (!tableIsFiltered) {
-        if ($result->num_rows > 0) {
-            // output data of each row
-            echo "<div style = 'display: inline-block; overflow: hidden; height: auto;'>
+    if ($result->num_rows > 0) {
+        // output data of each row
+        echo "<div style = 'display: inline-block;'>
                 <table>
                    <tr>
                        <th>Annual</th>
@@ -35,8 +32,8 @@ function displayTable(){
                        <th>Degree</th>
                        <th>Student_id</th>
                    </tr>";
-            while($row = $result->fetch_assoc()) {
-                echo "<tr>
+        while($row = $result->fetch_assoc()) {
+            echo "<tr>
                       <td>".$row['Annual']."</td>
                       <td>".$row["Term"]."</td>
                       <td>".$row["Lastname"]."</td>
@@ -46,13 +43,12 @@ function displayTable(){
                       <td>".$row["Degree"]."</td>
                       <td>".$row["Student_id"]."</td>
                   </tr>";
-            }
-            echo "</table>
-       <a href='../private/interface.html'> filter 
-     </div>";
-
         }
+        echo "</table>
+              </div>";
+
     }
+
     if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 
@@ -84,7 +80,6 @@ function displayTable(){
             if ($result->num_rows > 0) {
                 // output data of each row
                 echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
-                $tableIsFiltered = true;
                 while($row = $result->fetch_assoc()) {
                     echo "<tr><td>".$row["﻿Year"]."</td><td>". $row["term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["student_id"]."</td></tr>";
                 }
