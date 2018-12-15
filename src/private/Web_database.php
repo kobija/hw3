@@ -1,4 +1,5 @@
 
+
 <?php
 
 displayTable();
@@ -62,9 +63,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Year</th><th>term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Year"]."</td><td>". $row["term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["student_id"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -80,9 +81,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Year"]."</td><td>". $row["term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["student_id"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -98,9 +99,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Year"]."</td><td>". $row["term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["student_id"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -117,9 +118,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Year"]."</td><td>". $row["term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["student_id"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -135,9 +136,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Term"]."</td><td>". $row["Id"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -153,9 +154,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Term"]."</td><td>". $row["Id"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -171,9 +172,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Term"]."</td><td>". $row["Id"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -189,9 +190,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Term"]."</td><td>". $row["Id"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -208,9 +209,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Term"]."</td><td>". $row["Id"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -228,9 +229,9 @@ function displayTable(){
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
-                echo "<table><tr><th>Term</th><th>Id</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th></tr>";
+                echo "<table><tr><th>Annual</th><th>Term</th><th>Lastname</th><th>Name</th><th>Major</th><th>Level</th><th>Degree</th><th>ID</th></tr></tr>";
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr><td>".$row["﻿Term"]."</td><td>". $row["Id"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td></tr>";
+                    echo "<tr><td>".$row["Annual"]."</td><td>". $row["Term"]."</td><td>". $row["Lastname"]."</td><td>".$row["Name"]."</td><td>".$row["Major"]."</td><td>".$row["Level"]."</td><td>".$row["Degree"]."</td><td>".$row["Student_id"]."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -248,4 +249,5 @@ function displayTable(){
 }
 
 ?>﻿
+
 
